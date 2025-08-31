@@ -28,7 +28,7 @@
 
 ## 기술 스택
 
-## **anguage**
+## **Language**
 |  |  |
 |-----------------|-----------------|
 | CSS3    |   <img src="https://github.com/user-attachments/assets/c531b03d-55a3-40bf-9195-9ff8c4688f13" alt="CSS3" width="100">|
