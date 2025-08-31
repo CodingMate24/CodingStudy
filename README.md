@@ -22,6 +22,8 @@
 
 
 ### **화면정의서(피그마)**
+<br/>
+- 링크 : <a href="https://www.figma.com/design/eENJw2mjaQki965WLZnx6p/Codingmate?m=auto&t=OXfojBZl9ezKh3rD-6">화면정의서</a>
 <img width="940" height="763" alt="image" src="https://github.com/user-attachments/assets/3b5ac8e1-da7e-433a-8d0f-d9b56fec57eb" />
 
 ## 기술 스택
