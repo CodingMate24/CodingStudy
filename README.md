@@ -76,7 +76,7 @@ project/
 │   ├── static/              # 공통 Util, Transaction js 파일
 │   ├── App.vue              # 메인 애플리케이션 컴포넌트
 │   ├── main.js              # 전역 js 파일
-│   ├── index.css            # 전역 css 파일
+│   └── index.css            # 전역 css 파일
 ├── .gitignore               # Git 무시 파일 목록
 └── README.md                # 프로젝트 개요 및 사용법
 ```
@@ -95,12 +95,12 @@ project/
 │   |   |   ├── config/                    # 공통 설정 파일 폴더
 │   |   |   ├── core/                      # 주요 기능 폴더
 │   |   |   ├── util/                      # 공통 유틸 파일 폴더
-│   |   |   | CodingStudyApplication.java  # 프로그램 실행 파일
+│   |   |   └── CodingStudyApplication.java  # 프로그램 실행 파일
 │   |   ├── resource/                # 리소스 설정 폴더
 │   |   |   ├── mapper/              # xml mapper 쿼리 폴더
-│   |   |   |   application.yml                # application.yml
-│   |   |   |   log4jdbc.log4j2.properties     # log4j 설정 파일  
-│   ├── test/                # 테스트 소스 폴더
+│   |   |   ├── application.yml                # application.yml
+│   |   |   └── log4jdbc.log4j2.properties     # log4j 설정 파일  
+│   └── test/                # 테스트 소스 폴더
 ├── build.gradle             # build.gradle 라이브러리 레파지토리 설정 파일
 ├── gradlew                  # Gradlew
 ├── gradlew.bat              # Gradlew Bat 파일
