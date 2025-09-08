@@ -59,6 +59,94 @@
 | Git    |  <img src="https://github.com/user-attachments/assets/483abc38-ed4d-487c-b43a-3963b33430e6" alt="git" width="100">    |
 | Figma    |  <img src="https://github.com/user-attachments/assets/f8e654ac-69ad-4d1d-97c2-9e877a4b7b61" alt="git kraken" width="100">    |
 
+# 개발 환경 아키텍처 다이어그램
+
+<div align="center">
+```
+┌──────────────────────────────────────────────┐
+│                  Client                      │
+│  ────────────────────────────────────────    │
+│ │  Browser                                │  │
+│ │ ┌─────────────────────────────────┐     │  │
+│ │ │  Frontend (Vue.js + Vite)       │     │  │
+│ │ │  - Vue 3, Vue Router            │     │  │
+│ │ │  - Bootstrap, JS, CSS3          │     │  │
+│ │ └─────────────────────────────────┘     │  │
+│  ────────────────────────────────────────    │
+└─────────────────────┬────────────────────────┘
+                      │  HTTP (REST API)
+                      ▼
+┌──────────────────────────────────────────────┐
+│                Backend (Spring Boot)         │
+│ ───────────────────────────────────────────  │
+││  Application Layer                        │ │
+││ ┌─────────────────────────────────────┐   │ │
+││ │ Controllers (REST API)              │   │ │
+││ │ Security (JWT, Spring Security)     │   │ │
+││ │ Validation                          │   │ │
+││ │ ModelMapper                         │   │ │
+││ │ Email Service                       │   │ │
+││ │ Actuator (Monitoring)               │   │ │
+││ │ Devtools (Development only)         │   │ │
+││ └─────────────────────────────────────┘   │ │
+││  Persistence Layer                        │ │
+││ ┌─────────────────────────────────────┐   │ │
+││ │ JPA (Hibernate)                     │   │ │
+││ │ MyBatis (SQL Mapper)                │   │ │
+││ │ Spring Data Redis                   │   │ │
+││ └─────────────────────────────────────┘   │ │
+││  Log4jdbc (SQL logging)                   │ │
+│ ───────────────────────────────────────────  │
+││  Dependency Management                    │ │
+││  - Spring Dependency Management Plugin     │ │
+│ ───────────────────────────────────────────  │
+││  Test/Annotation Processing               │ │
+││  - JUnit, Spring Test, Security Test      │ │
+││  - Lombok                                 │
+│ ───────────────────────────────────────────  │
+└─────────────┬────────────────────────────────┘
+              │
+              ▼
+       ┌────────────┐
+       │   MySQL    │
+       │ Database   │
+       └────────────┘
+              │
+              ▼
+       ┌────────────┐
+       │   Redis    │
+       │  (Cache)   │
+       └────────────┘
+```
+</div>
+---
+
+## 설명
+
+**Frontend**  
+- Vue.js 기반 SPA  
+- Vite로 빌드  
+- Bootstrap, JS, CSS3 사용  
+- Vue Router로 라우팅  
+- 브라우저에서 동작
+
+**Backend**  
+- Spring Boot 3.2.3, Java 17  
+- REST API (컨트롤러)  
+- JWT 인증/인가, Spring Security  
+- Validation, ModelMapper  
+- 이메일 서비스, 모니터링(Actuator), 개발 편의(Devtools)  
+- JPA(Hibernate), MyBatis  
+- MySQL 지원 (JDBC 클라이언트 포함)  
+- SQL 로그(Log4jdbc), Redis 캐시  
+- 테스트/어노테이션 처리(Lombok, JUnit 등)  
+- 의존성 관리(Spring Dependency Management)
+
+**DB/Cache**  
+- MySQL (비즈니스/사용자 데이터 저장)  
+- Redis (캐싱, 세션 등)
+
+
 <br/>
 
 ## 프로젝트 구조
