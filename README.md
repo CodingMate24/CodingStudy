@@ -99,11 +99,11 @@
 ││  Log4jdbc (SQL logging)                   │ │
 │ ───────────────────────────────────────────  │
 ││  Dependency Management                    │ │
-││  - Spring Dependency Management Plugin     │ │
+││  - Spring Dependency Management Plugin    │ │
 │ ───────────────────────────────────────────  │
 ││  Test/Annotation Processing               │ │
 ││  - JUnit, Spring Test, Security Test      │ │
-││  - Lombok                                 │
+││  - Lombok                                 │ │
 │ ───────────────────────────────────────────  │
 └─────────────┬────────────────────────────────┘
               │
