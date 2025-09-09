@@ -222,6 +222,6 @@ project/
 ## 팀 소개
 |  |  |  |
 |-----------------|-----------------|-----------------|
-| 이승호   |  <img src="https://github.com/user-attachments/assets/c1c2b1e3-656d-4712-98ab-a15e91efa2da" alt="이승호" width="100"> | <ul><li>프로젝트 계획 및 관리</li><li>메인 피드/검색 페이지 개발</li><li>기타 개발</li></ul>     |
-| 최윤정   |  <img src="https://github.com/user-attachments/assets/f0dd09ae-5ae6-4553-953a-c2334e4b647c" alt="최윤정" width="100"> | <ul><li>프로젝트 계획 및 관리</li><li>로그인/회원가입 페이지 개발</li><li>기타 개발</li></ul> |
+| 이승호   |  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/78261250/487054973-1a4011af-cdfb-4892-a20b-31b0e6830091.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250909%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250909T024141Z&X-Amz-Expires=300&X-Amz-Signature=7e4f317bb720f3be797e950ec5c6cf64c65469a9d5c3bbe018b3bdc33cc86f3d&X-Amz-SignedHeaders=host" alt="이승호" width="100"/> | <ul><li>프로젝트 계획 및 관리</li><li>메인 피드/검색 페이지 개발</li><li>기타 개발</li></ul>     |
+| 최윤정   |  <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/78261250/487053205-f0dd09ae-5ae6-4553-953a-c2334e4b647c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250909%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250909T023743Z&X-Amz-Expires=300&X-Amz-Signature=e3b1e4d7c3bf973d7f24a9fef3c8248bf423c38fa9d564853d9d8a7b33e5b6c3&X-Amz-SignedHeaders=host" alt="최윤정" width="100"> | <ul><li>프로젝트 계획 및 관리</li><li>로그인/회원가입 페이지 개발</li><li>기타 개발</li></ul> |
 
