@@ -223,4 +223,5 @@ project/
 |  |  |  |
 |-----------------|-----------------|-----------------|
 | 이승호   |  <img src="https://github.com/user-attachments/assets/c1c2b1e3-656d-4712-98ab-a15e91efa2da" alt="이승호" width="100"> | <ul><li>프로젝트 계획 및 관리</li><li>메인 피드/검색 페이지 개발</li><li>기타 개발</li></ul>     |
-| 최윥정   |  <img src="https://github.com/user-attachments/assets/78ec4937-81bb-4637-975d-631eb3c4601e" alt="최윤정" width="100">| <ul><li>프로젝트 계획 및 관리</li><li>로그인/회원가입 페이지 개발</li><li>기타 개발</li></ul> |
+| 최윤정   |  <img src="https://github.com/user-attachments/assets/f0dd09ae-5ae6-4553-953a-c2334e4b647c" alt="최윤정" width="100"> | <ul><li>프로젝트 계획 및 관리</li><li>로그인/회원가입 페이지 개발</li><li>기타 개발</li></ul> |
+
