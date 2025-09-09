@@ -11,8 +11,14 @@
 <img width="300" height="330" alt="logo" src="https://github.com/user-attachments/assets/5bfc05e5-17da-49e0-bd79-d389154e7a2c"/>
 </div>
 
-- 프로젝트 이름: Coding Study
-- 프로젝트 설명: 코딩 공부를 위한 간단한 커뮤니티 사이트
+- **프로젝트 이름**: Coding Study
+- **목적**: 사용자 간 정보 공유와 소통을 위한 웹 기반 커뮤니티 서비스 제공
+- **특징**:
+  - Vue.js 기반의 반응형 UI
+  - Spring Boot 기반 REST API 서버
+  - MySQL을 통한 안정적인 데이터 관리
+  - JWT 기반 사용자 인증 및 소셜 로그인 지원
+  - 게시글, 댓글, 좋아요 등 기본 커뮤니티 기능 제공
 
 - Repository : <a href="https://github.com/CodingMate24/FrontEnd">FrontEnd</a>
 / <a href="https://github.com/CodingMate24/BackEnd">BackEnd</a>
@@ -28,38 +34,17 @@
 
 ## 기술 스택
 
-## **Language**
-|  |  |
-|-----------------|-----------------|
-| CSS3    |   <img src="https://github.com/user-attachments/assets/c531b03d-55a3-40bf-9195-9ff8c4688f13" alt="CSS3" width="100">|
-| Javascript    |  <img src="https://github.com/user-attachments/assets/4a7d7074-8c71-48b4-8652-7431477669d1" alt="Javascript" width="100"> | 
-
-<br/>
-
-## **Frotend**
-|  |  |  |
-|-----------------|-----------------|-----------------|
-| Vue.js    |  <img alt="vue" src="https://github.com/user-attachments/assets/c1b35bfc-7eca-4bb9-ba26-fa4beb2047e4" width="100"> |    |
-
-<br/>
-
-## **Backend/Database**
-|  |  |  |
-|-----------------|-----------------|-----------------|
-| Java    | <img width="172" height="294" alt="java" src="https://github.com/user-attachments/assets/300fdd06-128c-4965-982e-53b659c6ab2a" /> | 17.0    |
-| SpringBoot    | <img width="100" alt="Springboot" src="https://github.com/user-attachments/assets/aa01b481-34da-4e7a-a051-6a703d8fd944" />    | 3.2.3    |
-| MySQL    | <img width="100" alt="mysql" src="https://github.com/user-attachments/assets/ac01f19a-6ded-4262-a782-6408dd2af9d7" />   | 8.5    |
-
-<br/>
+| 구분        | 기술명                                          |
+|-----------|---------------------------------------------|
+| 프론트엔드    | Vue.js 3, Vue Router 4, Bootstrap 5, Vite |
+| 백엔드      | Java 17, Spring Boot 3.2.3, Spring Security, Spring Data JPA, MyBatis, Redis, ModelMapper |
+| 데이터베이스   | MySQL 8.2.0                                 |
+| 인증/보안    | JWT, OAuth 2.0 (Google/Naver/Kakao)         |
+| 메일 서비스   | Spring Boot Mail                           |
+| 개발 툴     | IntelliJ, VSCode, GitHub                    |
 
 
-## **Cooperation**
-|  |  |
-|-----------------|-----------------|
-| Git    |  <img src="https://github.com/user-attachments/assets/483abc38-ed4d-487c-b43a-3963b33430e6" alt="git" width="100">    |
-| Figma    |  <img src="https://github.com/user-attachments/assets/f8e654ac-69ad-4d1d-97c2-9e877a4b7b61" alt="git kraken" width="100">    |
-
-# 개발 환경 아키텍처 다이어그램
+# 개발 환경 아키텍처
 
 <div align="center">
   
@@ -123,7 +108,7 @@
 </div>
 ---
 
-## 설명
+## 아키텍쳐 설명
 
 **Frontend**  
 - Vue.js 기반 SPA  
@@ -208,27 +193,32 @@ project/
 
 ## 기능 소개
 
-- **회원가입**:
-  - 회원가입 시 DB에 유저정보가 등록됩니다.
+- **사용자 인증**:
+  - 이메일/비밀번호 회원가입 및 로그인
+  - Google, Naver, Kakao 소셜 로그인 지원
+  - 비밀번호 찾기 및 이메일 인증 기능 제공
+  - JWT 기반 인증 토큰 발급 및 권한 관리
 
-- **로그인**:
-  - 사용자 인증 정보를 통해 로그인합니다.
+- **게시글 관리**:
+  - 게시글 작성, 수정, 삭제 기능
+  - 이미지 첨부 기능
+  - 게시글 상세 페이지 제공 (내용, 작성자, 좋아요, 댓글 표시)
 
-- **패스워드 재설정**:
-  - 이메일 인증을 통해 패스워드를 재설정 합니다.
+- **댓글 관리**:
+  - 게시글에 댓글 작성/삭제 가능
+  - 실시간 댓글 반영
 
-- **메인 피드**:
-  - 검색 시 해당 동아리가 업로드한 홍보글이 보여집니다.
+- **좋아요 기능**:
+  - 게시글 좋아요/취소 기능
+  - 사용자별 좋아요 목록 확인 가능
 
-- **검색 페이지**:
-  - 검색 시 해당 동아리가 업로드한 홍보글이 보여집니다.
+- **검색**:
+  - 키워드 검색 기능 제공
+  - 검색 결과 필터링 기능
 
-- **프로필**:
-  - 새로운 동아리를 만들어 관리할 수 있습니다.
-
-- **글 작성/ 수정**:
-  - 글 등록을 할 수 있습니다.
-  - 동아리 프로필에서는 동아리 소개, 동아리 활동사진 갤러리, 동아리 홍보글 기록관 등을 볼 수 있습니다.
+- **마이페이지**:
+  - 사용자 프로필 확인/수정
+  - 내가 작성한 게시글 및 좋아요한 게시글 목록 확인
 
 <br/>
 <br/>
